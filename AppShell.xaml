@@ -4,13 +4,10 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Quintana_Progreso3.ViewModel"
-    Shell.FlyoutBehavior="Flyout">
+    Shell.FlyoutBehavior="Disabled">
 
-    <FlyoutItem Title="Home" FlyoutDisplayOptions="AsSingleItem">
-        <ShellContent ContentTemplate="{DataTemplate local:RicardoQuintanaMeal}" />
-    </FlyoutItem>
-    <FlyoutItem Title="List" FlyoutDisplayOptions="AsSingleItem">
-        <ShellContent ContentTemplate="{DataTemplate local:RicardoQuintanaList}" />
-    </FlyoutItem>
+    <ShellContent
+       Title="Inicio"
+        ContentTemplate = "{DataTemplate local:RicardoQuintanaMeal}"/>
     
 </Shell>
